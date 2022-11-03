@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelSpark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./defaultStyle.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo_container">
+        <img alt="" src="./images/logo.png" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#landing"></a>Home</li>
+          <li><a href="#popular">Places</a></li>
+          <li><a href="#contact_form"></a>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="landing" id="landing">
+        <img src="./images/banner_video2.gif" alt="" />
+        <div class="hook_container">
+          <h1>Enjoy Your Vacation With <strong>TravelSpark</strong></h1>
+          <h3>
+            TRAVEL TO THE ANY CORNER OF THE WORLD, WITHOUT GOING AROUND IN
+            CIRCLES
+          </h3>
+          <a href="www.google.com"
+            ><button id="load_more">Load More ></button></a
+          >
+          <div id="info_container"></div>
+        </div>
+      </div>
+      <div class="popular" id="popular">
+        <h1>POPULAR TOUR PLACES</h1>
+        <div class="tags_container">
+          <div class="row">
+            <div class="tag">
+              <img src="./images/ture_img1.jpg" alt="" />
+              <p class="inner_text">
+                MAURITIUS<br />FROM <strong>$860</strong>
+              </p>
+            </div>
+            <div class="tag">
+              <img src="./images/ture_img2.jpg" alt="" />
+              <p class="inner_text">TAHITI<br />FROM <strong>$950</strong></p>
+            </div>
+            <div class="tag">
+              <img src="./images/ture_img3.jpg" alt="" />
+              <p class="inner_text">PARIS<br />FROM <strong>$730</strong></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="tag">
+              <img src="./images/ture_img4.jpg" alt="" />
+              <p class="inner_text">MALDIVES<br />FROM <strong>$560</strong></p>
+            </div>
+            <div class="tag">
+              <img src="./images/ture_img5.jpg" alt="" />
+              <p class="inner_text">
+                FLORENCE<br />FROM <strong>$1050</strong>
+              </p>
+            </div>
+            <div class="tag">
+              <img src="./images/ture_img1.jpg" alt="" />
+              <p class="inner_text">
+                SANTORINI<br />FROM <strong>$999</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about_us">
+        <h1>WHO WE ARE?</h1>
+        <h4>Explore more about Our TravelSpark</h4>
+        <p>
+          Bacon ipsum dolor amet swine cupim jerky tri-tip turkey pork loin
+          prosciutto burgdoggen shoulder picanha. Brisket turducken buffalo
+          hamburger corned beef short ribs. Sausage turducken buffalo cow
+          hamburger picanha beef burgdoggen, biltong ground round short loin
+          boudin pork. Drumstick shankle alcatra pastrami venison.
+        </p>
+      </div>
+      <form class="contact_form" method="get" id="myForm">
+        <h1>CONTACT US</h1>
+        <input id="name" type="text" name="name" placeholder="Name" />
+        <input id="origin" type="text" placeholder="Origin" />
+        <input id="destiny" type="text" placeholder="Destiny" />
+        <input id="persons_amount" type="number" placeholder="Persons amount" />
+        <input id="date" type="date" />
+        <div class="btnWrapper">
+          <button id="submitBtn" type="button" onclick="dataSaver()">
+            Submit
+          </button>
+          <button id="submitBtn" type="button" onclick="filter()">
+            Filter
+          </button>
+        </div>
+      </form>
+    </main>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

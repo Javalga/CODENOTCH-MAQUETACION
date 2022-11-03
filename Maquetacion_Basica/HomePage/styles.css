@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #030303;
+  color: white;
+  padding: 1em;
+}
+
+header > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+header > ul > li {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.text_container {
+  width: 55%;
+}
+
+p {
+  margin-bottom: 2vh;
+}
+h1 {
+  margin-bottom: 5vh;
+  font-size: 3rem;
+  font-weight: bold;
+}

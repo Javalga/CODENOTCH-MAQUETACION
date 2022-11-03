@@ -1,0 +1,238 @@
+header {
+  height: 8vh;
+  background: white;
+  padding: 0.5em;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.logo_container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  list-style: none;
+  font-size: 1rem;
+  color: #5c4d8e;
+}
+
+nav > ul > li:hover {
+  color: #f5d000;
+  transition: 400ms ease-in-out all;
+  cursor: pointer;
+  font-weight: 700;
+}
+main {
+  padding-bottom: 10em;
+}
+.landing {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing > img {
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+}
+
+.hook_container {
+  width: 60%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hook_container > h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+strong {
+  color: #f5d000;
+}
+
+.hook_container > h3 {
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 3em;
+}
+
+#load_more {
+  background-color: white;
+  border-radius: 2em;
+  padding: 1em 2em;
+  font-size: 1.1rem;
+  color: #0e4d8e;
+}
+
+.popular {
+  display: flex;
+  padding: 10em 3em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popular > h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.tags_container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.row {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+}
+.tag {
+  width: 33%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 134, 255, 0) 0%,
+    rgb(14 77 142) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag > img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 9;
+}
+
+.inner_text {
+  position: absolute;
+  z-index: 99;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 2em;
+  color: white;
+  text-align: center;
+}
+
+.about_us {
+  padding: 5em 20em;
+}
+
+.about_us > h1 h4 {
+  color: #3d4352;
+}
+
+.about_us > h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.about_us > h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7em;
+}
+
+.contact_form {
+  width: 70%;
+  margin: auto;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact_form > h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contact_form > input {
+  padding: 1em 1em 0.2em 0;
+  font-size: 1.5rem;
+  border: 0;
+  border-bottom: 2px solid black;
+}
+.contact_form > input:focus {
+  outline: 0;
+}
+
+#submitBtn {
+  padding: 0.8em 2em;
+  font-size: 1.5rem;
+  margin-top: 3em;
+  background-color: #f5d000;
+  font-weight: 700;
+  border-radius: 2em;
+  border: 0;
+  -webkit-box-shadow: 0px 9px 33px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 33px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 33px -16px rgba(0, 0, 0, 0.75);
+  border-radius: 9px;
+  cursor: pointer;
+}
+.btnWrappert {
+  display: flex;
+  align-items: center;
+}
+#info_container {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 1em;
+  bottom: 5%;
+  width: 30%;
+  background-color: rgb(255, 255, 255, 1);
+  padding: 1em;
+  z-index: 99999999;
+  -webkit-box-shadow: 0px 9px 33px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 33px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 33px -16px rgba(0, 0, 0, 0.75);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 134, 255, 0.4) 0%,
+    rgb(14 77 142) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#info_container > p {
+  text-align: center;
+  color: #f5d000;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}

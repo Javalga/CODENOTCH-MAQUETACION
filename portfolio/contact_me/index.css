@@ -1,0 +1,42 @@
+main {
+  height: 83vh;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+form > input {
+  width: 50%;
+  padding: 1em;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+form > textarea {
+  width: 50%;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+form > button {
+  padding: 1em 3em;
+  font-size: 1.5rem;
+  background-color: var(--main-bg-color2);
+  border: 0;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  color: var(--main-bg-color1);
+  font-weight: 800;
+  cursor: pointer;
+}
